@@ -1,0 +1,16 @@
+﻿  AppMainWindow.cpp
+  DashboardTable.cpp
+C:\projectideas\Selfstock\DashboardTable.cpp(18,12): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\projectideas\Selfstock\DashboardTable.cpp(23,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  main.cpp
+  piechart.cpp
+  Portfolio.cpp
+  PortfolioTable.cpp
+  PortfolioView.cpp
+  StockAPI.cpp
+  StockApp.cpp
+  StockData.cpp
+  Generating Code...
+  Selfstock.vcxproj -> C:\projectideas\Selfstock\x64\Debug\Stocktracker.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
