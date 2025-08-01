@@ -1,0 +1,25 @@
+# Build files
+/build/
+/bin/
+/obj/
+
+# Visual Studio files
+.vs/
+/*.vcxproj.user
+/*.suo
+/*.user
+/*.userosscache
+/*.sln.docstates
+
+# Mac OS files
+.DS_Store
+
+# Logs and databases
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Git folder (don't ignore this unless you want to)
+!.gitignore
