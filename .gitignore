@@ -1,0 +1,43 @@
+# Build and intermediate files
+*.obj
+*.exe
+*.ilk
+*.pdb
+*.ipch
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.log
+*.tlog
+*.lastbuildstate
+*.idb
+
+# VS folders
+.vs/
+Debug/
+Release/
+x64/
+x86/
+
+# User-specific files
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+
+# CMake files (if any)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Backup/temporary files
+*.tmp
+*.bak
+
+# vcpkg logs
+*.applocal.log
+
+# Copilot stuff
+*.copilot-snippets/
