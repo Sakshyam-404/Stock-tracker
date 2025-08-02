@@ -7,6 +7,7 @@
 #include <FL/Fl_Text_Display.H>
 #include <FL/Fl_Group.H>
 #include <FL/Fl_Table.H>
+#include <FL/Fl_Multiline_Output.H>
 #include <vector>
 #include "StockData.h"
 #include "DashboardTable.h"
@@ -29,6 +30,7 @@ class AppMainWindow : public Fl_Window {
     Fl_Input* stockSymbolInput;
     Fl_Button* fetchButton;
     Fl_Button* addButton;
+    Fl_Button* removeButton;
     Fl_Text_Display* stockOutputDisplay;
     Fl_Text_Buffer* stockTextBuffer;
 
@@ -36,7 +38,8 @@ class AppMainWindow : public Fl_Window {
     std::vector<StockData> portfolio;
 
     // Dashboard table
-DashboardTable* dashboardTable;
+    DashboardTable* dashboardTable; // will be nullptr if not used
+    Fl_Multiline_Output* dashboardOutput;
 
     // Helper methods
     void fetchStockAndAddToPortfolio();
@@ -46,10 +49,12 @@ DashboardTable* dashboardTable;
     // Callbacks
     static void onFetchClicked(Fl_Widget*, void*);
     static void onAddClicked(Fl_Widget*, void*);
+    static void onRemoveClicked(Fl_Widget*, void*);
     static void onStockInfoBtnClicked(Fl_Widget*, void*);
     static void onDashboardBtnClicked(Fl_Widget*, void*);
     static void onTradeBtnClicked(Fl_Widget*, void*);
 
 public:
     AppMainWindow(int w, int h, const char* title);
+    ~AppMainWindow();
 };
